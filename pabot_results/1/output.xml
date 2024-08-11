@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.10.5 on win32)" generated="2024-08-07T12:21:27.524354" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Demo2" source="C:\Users\mohammad.daanish\PycharmProjects\pythonProject1\Robot_Framework_2024\Sample_Demos\Test_Demo2.robot">
+<test id="s1-t1" name="Fill the Registration form" line="39">
+<kw name="open the browser with url" owner="resource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-08-07T12:21:28.190357" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<arg>executable_path=C:/Users/mohammad.daanish/AppData/Local/Programs/Python/Python310/chromedriver_win32/chromedriver-win32/chromedriver-win32/chromedriver.exe</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-08-07T12:21:28.189359" elapsed="3.202000"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-08-07T12:21:31.393361" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-08-07T12:21:31.392362" elapsed="1.083998"/>
+</kw>
+<status status="PASS" start="2024-08-07T12:21:28.186360" elapsed="4.290000"/>
+</kw>
+<kw name="Fill the login details and form" owner="LandingPage">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-07T12:21:34.490359" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-07T12:21:32.479363" elapsed="2.010996"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-07T12:21:34.492360" level="INFO">Typing text 'rahulshettyacademy' into text field 'id:username'.</msg>
+<arg>id:username</arg>
+<arg>rahulshettyacademy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-07T12:21:34.491360" elapsed="0.719004"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-08-07T12:21:35.213359" level="INFO">Typing password into text field 'xpath://input[@type='password']'.</msg>
+<msg time="2024-08-07T12:21:35.312361" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>xpath://input[@type='password']</arg>
+<arg>learning</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-07T12:21:35.211371" elapsed="0.251987"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-07T12:21:35.465358" level="INFO">Clicking element 'xpath:(//span[@class='checkmark'])[2]'.</msg>
+<arg>xpath:(//span[@class='checkmark'])[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-07T12:21:35.464364" elapsed="0.243994"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:.modal-content</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-07T12:21:35.709359" elapsed="0.078999"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-07T12:21:35.790358" level="INFO">Clicking element 'id:okayBtn'.</msg>
+<arg>id:okayBtn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-07T12:21:35.789359" elapsed="0.132998"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>css:.modal-content</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2024-08-07T12:21:35.923366" elapsed="0.055991"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-08-07T12:21:35.981359" level="INFO">Selecting options from selection list 'xpath://select[@class='form-control']' by value teach.</msg>
+<arg>xpath://select[@class='form-control']</arg>
+<arg>teach</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-08-07T12:21:35.979357" elapsed="0.211004"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-08-07T12:21:36.192366" level="INFO">Selecting checkbox 'id:terms'.</msg>
+<arg>id:terms</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-07T12:21:36.191365" elapsed="0.190989"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2024-08-07T12:21:36.385361" level="INFO">Verifying checkbox 'id:terms' is selected.</msg>
+<arg>id:terms</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2024-08-07T12:21:36.384356" elapsed="0.061003"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-07T12:21:38.458515" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-07T12:21:36.446360" elapsed="2.012155"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-08-07T12:21:38.459518" level="INFO">Clicking button 'id:signInBtn'.</msg>
+<arg>id:signInBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-07T12:21:38.459518" elapsed="0.185997"/>
+</kw>
+<status status="PASS" start="2024-08-07T12:21:32.477361" elapsed="6.168154"/>
+</kw>
+<status status="PASS" start="2024-08-07T12:21:28.184357" elapsed="10.462158"/>
+</test>
+<status status="PASS" start="2024-08-07T12:21:27.549358" elapsed="11.098157"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test Demo2">Test Demo2</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-08-07T12:21:28.137358" level="ERROR">Error in file 'C:\Users\mohammad.daanish\PycharmProjects\pythonProject1\Robot_Framework_2024\Sample_Demos\PO\resource.robot' on line 7: Setting variable '${}' failed: Invalid variable name '${}'.</msg>
+<msg time="2024-08-07T12:21:28.156357" level="ERROR">Error in file 'C:\Users\mohammad.daanish\PycharmProjects\pythonProject1\Robot_Framework_2024\Sample_Demos\PO\LandingPage.robot' on line 4: Resource file 'PO\resource.robot' does not exist.</msg>
+</errors>
+</robot>

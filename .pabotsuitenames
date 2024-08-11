@@ -1,0 +1,6 @@
+datasources:8d4672f5b69c849cbdb7a90a42c086cd9272d0dc
+commandlineoptions:65f95c924ba97541f47949701c4e3c51192a5b43
+suitesfrom:no-suites-from-option
+file:3e7faa5b5d136a56c3d4c38183991477ee4c74b7
+--test Test Demo2.Verify with valid credentials
+--test Test Demo2.Fill the Registration form

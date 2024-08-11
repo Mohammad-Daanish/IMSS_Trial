@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.10.5 on win32)" generated="2024-07-28T15:26:29.791602" rpa="false" schemaversion="5">
+<suite id="s1" name="DDT2" source="C:\Users\mohammad.daanish\PycharmProjects\pythonProject1\Robot_Framework_2024\Sample_Demos\DataDriven_Testing\DDT2.robot">
+<kw name="Open Login Page" owner="login_resources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-07-28T15:26:30.474599" level="INFO">Creating an instance of the chrome WebDriver.</msg>
+<msg time="2024-07-28T15:26:30.474599" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-07-28T15:26:30.474599" level="FAIL">TypeError: 'module' object is not callable</msg>
+<arg>chrome</arg>
+<arg>executable_path=C:/Users/mohammad.daanish/AppData/Local/Programs/Python/Python310/chromedriver_win32/chromedriver-win32/chromedriver-win32/chromedriver.exe</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="FAIL" start="2024-07-28T15:26:30.473596" elapsed="0.003003">TypeError: 'module' object is not callable</status>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<arg>${LOGIN_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" start="2024-07-28T15:26:30.477601" elapsed="0.000000"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2024-07-28T15:26:30.477601" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-07-28T15:26:30.472599" elapsed="0.005002">TypeError: 'module' object is not callable</status>
+</kw>
+<test id="s1-t1" name="LoginTestwithExcel using ${username} and ${password}" line="12">
+<status status="FAIL" start="2024-07-28T15:26:30.479598" elapsed="0.001005">Parent suite setup failed:
+TypeError: 'module' object is not callable</status>
+</test>
+<kw name="Close Browsers" owner="login_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-07-28T15:26:30.484596" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-07-28T15:26:30.483602" elapsed="0.000994"/>
+</kw>
+<status status="FAIL" start="2024-07-28T15:26:29.797608" elapsed="0.686988">Suite setup failed:
+TypeError: 'module' object is not callable</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="DDT2">DDT2</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-07-28T15:26:30.462601" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Users\mohammad.daanish\PycharmProjects\pythonProject1\Robot_Framework_2024\Sample_Demos\DataDriven_Testing\DDT2.robot", line 0</msg>
+<msg time="2024-07-28T15:26:30.463598" level="ERROR">In source file:
+  File "../Test_Data/loginData.xlsx", line 0</msg>
+<msg time="2024-07-28T15:26:30.470598" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: AttributeError: module 'numpy' has no attribute 'float'.
+`np.float` was a deprecated alias for the builtin `float`. To avoid this error in existing code, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
+The aliases was originally deprecated in NumPy 1.20; for more details and guidance see the original release note at:
+    https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations</msg>
+</errors>
+</robot>

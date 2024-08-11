@@ -1,0 +1,2 @@
+[ ERROR ] Error in file 'C:\Users\mohammad.daanish\PycharmProjects\pythonProject1\Robot_Framework_2024\Sample_Demos\PO\resource.robot' on line 7: Setting variable '${}' failed: Invalid variable name '${}'.
+[ ERROR ] Error in file 'C:\Users\mohammad.daanish\PycharmProjects\pythonProject1\Robot_Framework_2024\Sample_Demos\PO\LandingPage.robot' on line 4: Resource file 'PO\resource.robot' does not exist.

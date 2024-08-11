@@ -1,0 +1,7 @@
+*** Test Cases *** ,${username},${password}
+Right user empty pswd,daanishrehan@gmail.com,${EMPTY}
+Right user wrong pswd,daanishrehan@gmail.com,xyz
+wrong user right pswd,daanishrehan@gmail,Spartans@786
+wrong user empty pswd,Baanijishrehan@gmail,${EMPTY}
+wrong user wrong pswd,Baanijishrehan@gmail,xyz
+Right user Right pswd,daanishrehan@gmail.com,Spartans@786
